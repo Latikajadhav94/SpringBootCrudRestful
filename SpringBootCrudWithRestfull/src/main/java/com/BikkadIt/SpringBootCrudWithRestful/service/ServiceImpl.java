@@ -4,21 +4,22 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import com.BikkadIt.SpringBootCrudWithRestful.dao.DaoI;
 import com.BikkadIt.SpringBootCrudWithRestful.model.Employee;
 
-@Repository
+@Service
 public class ServiceImpl implements ServiceI {
 
 	@Autowired
 	private DaoI daoI;
 	
 	@Override
-	public int addEmployeeService(Employee employee) {
+	public int saveEmployeeService(Employee employee) {
 	   System.out.println("Service layer");
 	   System.out.println(employee);
-	   int employee2 = daoI.addEmployee(employee);
+	   int employee2 = daoI.saveEmployee(employee);
 		return employee2;
 	}
 

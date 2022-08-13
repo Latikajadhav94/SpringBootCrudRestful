@@ -17,7 +17,7 @@ public class DaoImpl implements DaoI{
 	private SessionFactory sf;
 	
 	@Override
-	public int addEmployee(Employee employee) {
+	public int saveEmployee(Employee employee) {
 		Session session=sf.openSession();
 		session.beginTransaction();
 		int id=(int)session.save(employee);

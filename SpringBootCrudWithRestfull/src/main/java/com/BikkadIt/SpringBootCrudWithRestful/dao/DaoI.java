@@ -6,7 +6,7 @@ import com.BikkadIt.SpringBootCrudWithRestful.model.Employee;
 
 public interface DaoI {
 
-	public int addEmployee(Employee employee);
+	public int saveEmployee(Employee employee);
 	public List<Employee> getAllEmployee();
 	
 	

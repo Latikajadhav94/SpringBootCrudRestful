@@ -8,6 +8,6 @@ public interface ServiceI {
 
 	
 	
-	public int addEmployeeService(Employee employee);
+	public int saveEmployeeService(Employee employee);
 	public List<Employee> getAllEmployeeService();
 }
